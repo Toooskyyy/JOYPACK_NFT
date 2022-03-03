@@ -168,6 +168,12 @@ sup {
     top: -.5em;
 }
 
+.one-column {
+    padding: 3% 13%;
+    float: left;
+    width: 100%;
+}
+
 a {
     color: #007bff;
     text-decoration: none;
@@ -442,6 +448,26 @@ h6,
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 1.2;
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16/9 ratio */
+    padding-top: 30px;
+    /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
 }
 
 hr {
@@ -5900,6 +5926,7 @@ a.badge-dark:focus {
 }
 
 .media-body {
+    width: 50%;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -8418,6 +8445,10 @@ button.bg-dark:focus {
     .float-lg-none {
         float: none !important;
     }
+}
+
+.one-column {
+    padding: 15% 10%;
 }
 
 @media (min-width: 1200px) {
